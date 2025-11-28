@@ -7,11 +7,6 @@
             background-color: white;
             padding: 20px;
         }
-        .box {
-            background: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-        }
         .label {
             font-weight: bold;
         }
@@ -53,3 +48,4 @@
 
 </body>
 </html>
+
