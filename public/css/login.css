@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+
+    background:
+        linear-gradient(rgba(10, 35, 85, 0.6), rgba(10, 35, 85, 0.6)),
+        url("https://masuk-ptn.com/images/product/b84e7c42cc314b1da2f72b742a2376a864cd2878.jpg")
+        no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Kotak Login */
+.box {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 60px;
+    border-radius: 18px;
+    width: 480px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 7px 30px rgba(0, 0, 50, 0.45);
+    border: 1px solid rgba(0, 0, 80, 0.25);
+}
+
+.box h2 {
+    margin-bottom: 28px;
+    font-size: 28px;
+    color: #0d2c8d;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 17px;
+    margin: 14px 0;
+    border-radius: 10px;
+    border: 1px solid #3366cc;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+input:focus {
+    outline: none;
+    border-color: #0d2c8d;
+    box-shadow: 0 0 7px rgba(13, 44, 141, 0.6);
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0a1f61;
+}
+
+.remember input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 18px;
+    margin-top: 20px;
+    background: #0d2c8d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0a1f61;
+}
