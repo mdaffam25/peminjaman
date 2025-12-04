@@ -26,3 +26,10 @@ $routes->get('/logout', 'Login::logout');
 
 // Riwayat
 $routes->get('/riwayat', 'Peminjaman::riwayat');
+
+// Halaman Surat (preview)
+$routes->get('/surat-peminjaman/(:num)', 'Peminjaman::surat/$1');
+
+// Download surat
+$routes->get('/surat-peminjaman/download/(:num)', 'Peminjaman::download/$1');
+
