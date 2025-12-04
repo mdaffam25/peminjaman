@@ -23,3 +23,6 @@ $routes->get('/logout', 'Auth::logout');
 $routes->get('/dashboard', 'Dashboard::index', ['filter' => 'sessionCheck']);
 
 $routes->get('/logout', 'Login::logout');
+
+// Riwayat
+$routes->get('/riwayat', 'Peminjaman::riwayat');
