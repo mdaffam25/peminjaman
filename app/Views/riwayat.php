@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>Riwayat Peminjaman</title>
@@ -62,7 +61,9 @@
                 <td><?= $row['waktu_mulai']; ?></td>
                 <td><?= $row['waktu_selesai']; ?></td>
                 <td>
-                    <a class="btn" href="/download/surat/<?= $row['id_peminjaman']; ?>">Download</a>
+                    <a class="btn" href="/surat-peminjaman/<?= $row['id_peminjaman']; ?>">Lihat Surat</a>
+                    <a class="btn" href="/surat-peminjaman/download/<?= $row['id_peminjaman']; ?>">Download</a>
+
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -76,3 +77,4 @@
 
 </body>
 </html>
+
