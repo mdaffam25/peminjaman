@@ -6,15 +6,6 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-// Router Setup
-// $routes->setDefaultNamespace('App\Controllers');
-// $routes->setDefaultController('Home');
-// $routes->setDefaultMethod('index');
-// $routes->setTranslateURIDashes(false);
-// $routes->set404Override();
-// $routes->setAutoRoute(true);
-// App routes
-
 // Login
 $routes->get('/login', 'Auth::login');
 $routes->post('/login/process', 'Auth::loginProcess');
@@ -37,5 +28,16 @@ $routes->get('/surat-peminjaman/download/(:num)', 'Peminjaman::download/$1');
 $routes->get('/cek', 'Cek::index');
 $routes->post('/cek/cek_ketersediaan', 'Cek::cek_ketersediaan');
 $routes->get('/cek/getRuangan/(:num)', 'Cek::getRuangan/$1');
+
+// ===== Petugas =====
+// Dashboard Petugas
+$routes->get('/dashboard_petugas', 'C_Petugas::index', ['filter' => 'sessionCheck']);
+
+// User Management
+$routes->get('/user/tambah', 'C_Petugas::tambah');
+$routes->post('/user/simpan', 'C_Petugas::simpan');
+$routes->get('/user/edit/(:num)', 'C_Petugas::edit/$1');
+$routes->post('/user/update/(:num)', 'C_Petugas::update/$1');
+$routes->get('/user/delete/(:num)', 'C_Petugas::delete/$1');
 
 
