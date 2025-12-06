@@ -33,3 +33,9 @@ $routes->get('/surat-peminjaman/(:num)', 'Peminjaman::surat/$1');
 // Download surat
 $routes->get('/surat-peminjaman/download/(:num)', 'Peminjaman::download/$1');
 
+// Punya Fitur Wafi
+$routes->get('/cek', 'Cek::index');
+$routes->post('/cek/cek_ketersediaan', 'Cek::cek_ketersediaan');
+$routes->get('/cek/getRuangan/(:num)', 'Cek::getRuangan/$1');
+
+
