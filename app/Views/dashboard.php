@@ -89,7 +89,7 @@
             <div class="card custom-card shadow">
                 <div class="card-body text-center">
                     <h5>Cek Ketersediaan Fasilitas & Ruangan</h5>
-                    <a href="/cek-ketersediaan" class="btn btn-primary w-100">Cek Ketersediaan</a>
+                    <a href="<?= base_url('cek') ?>" class="menu-button">Cek Ketersediaan Fasilitas</a>
                 </div>
             </div>
         </div>
