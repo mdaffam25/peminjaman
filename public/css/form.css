@@ -1,0 +1,113 @@
+body { 
+    font-family: 'Segoe UI', Arial; 
+    max-width: 700px; 
+    margin: auto; 
+    padding: 20px; 
+    background: #e8f5e9; 
+}
+
+/* JUDUL HALAMAN */
+h2 {
+    text-align: center;
+    background: #2e7d32; 
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    width: 90%;       
+    margin: 0 auto 20px auto; 
+}
+
+/* CONTAINER FORM */
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 5px solid #43a047; 
+}
+
+/* LABEL */
+.form-container label {
+    font-weight: bold; 
+    display: block; 
+    margin-top: 12px; 
+    color: #1b5e20;
+}
+
+/* INPUT */
+.form-container input {
+    padding: 10px;
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 8px;
+    border: 1px solid #a5d6a7;
+    background: #f1f8f2;
+    transition: 0.3s;
+}
+
+.form-container input:focus {
+    border-color: #2e7d32;
+    outline: none;
+    background: #e9f7eb;
+}
+
+/* BUTTON SIMPAN */
+.form-container button {
+    margin-top: 20px;
+    padding: 12px 15px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background: #1b5e20;
+    transform: scale(1.05);
+}
+
+/* BUTTON KEMBALI */
+.btn-outline {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 9px 15px;
+    border: 2px solid #2e7d32;
+    color: #2e7d32;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 566px;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.btn-outline:hover {
+    background: #d2fed4;
+    transform: scale(1.05);
+}
+
+/* ALERT */
+.alert {
+    padding: 10px 20px;       
+    border-radius: 4px;
+    margin: 20px auto;        
+    text-align: center;
+    max-width: 400px;   
+    font-size: 20px; 
+    font-weight: bold;       
+    animation: hideAlert 0s 4s forwards; /* hilang otomatis setelah 4 detik */
+}
+
+@keyframes hideAlert {
+    to { display: none; }
+}
+
+.alert.success { background:#2ecc71; color:#fff; }
+.alert.error { background:#e74c3c; color:#fff; }
