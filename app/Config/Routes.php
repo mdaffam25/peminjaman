@@ -34,10 +34,10 @@ $routes->get('/cek/getRuangan/(:num)', 'Cek::getRuangan/$1');
 $routes->get('/dashboard_petugas', 'C_Petugas::index', ['filter' => 'sessionCheck']);
 
 // User Management
-$routes->get('/user/tambah', 'C_Petugas::tambah');
-$routes->post('/user/simpan', 'C_Petugas::simpan');
-$routes->get('/user/edit/(:num)', 'C_Petugas::edit/$1');
-$routes->post('/user/update/(:num)', 'C_Petugas::update/$1');
-$routes->get('/user/delete/(:num)', 'C_Petugas::delete/$1');
+$routes->get('/user/tambah', 'C_petugas::tambah');
+$routes->post('/user/simpan', 'C_petugas::simpan');
+$routes->get('/user/edit/(:num)', 'C_petugas::edit/$1');
+$routes->post('/user/update/(:num)', 'C_petugas::update/$1');
+$routes->get('/user/delete/(:num)', 'C_petugas::delete/$1');
 
 
